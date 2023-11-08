@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="rolavsp">
+  <!-- Favicon icon -->
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon.ico">
+  <title>Madic Iberia</title>
+  <!-- This page CSS -->
+  <!-- chartist CSS -->
+  <base href="/app/">
+
+  <link href="assets/node_modules/morrisjs/morris.css" rel="stylesheet">
+  <!--Toaster Popup message CSS -->
+  <link href="assets/node_modules/toast-master/css/jquery.toast.css" rel="stylesheet">
+  <!-- Custom CSS -->
+
+  <link href="assets/dist/css/pages/login-register-lock.css" rel="stylesheet">
+  <link href="assets/dist/css/style.min.css" rel="stylesheet">
+  <link href="assets/node_modules/icheck/skins/all.css" rel="stylesheet">
+  <link href="assets/dist/css/pages/form-icheck.css" rel="stylesheet">
+  <!-- Dashboard 1 Page CSS -->
+  <link href="assets/dist/css/pages/dashboard1.css" rel="stylesheet">
+  <link href="assets/node_modules/bootstrap-datepicker/bootstrap-datepicker.min.css" rel="stylesheet" type="text/css" />
+  <!-- Daterange picker plugins css -->
+  <link href="assets/node_modules/timepicker/bootstrap-timepicker.min.css" rel="stylesheet">
+  <link href="assets/node_modules/clockpicker/dist/jquery-clockpicker.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.6.1/fullcalendar.min.css">
+  <link href="assets/dist/css/pages/google-vector-map.css" rel="stylesheet">
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+  <!-- ============================================================== -->
+  <!-- ============================================================== -->
+  <!-- All Jquery -->
+  <!-- ============================================================== -->
+
+  <script src="assets/node_modules/jquery/jquery-3.2.1.min.js"></script>
+  <!-- Bootstrap popper Core JavaScript -->
+  <script src="assets/node_modules/popper/popper.min.js"></script>
+  <script src="assets/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <!-- slimscrollbar scrollbar JavaScript -->
+  <script src="assets/dist/js/perfect-scrollbar.jquery.min.js"></script>
+  <!--Wave Effects -->
+  
+  <script src="assets/dist/js/waves.js"></script>
+  
+  <!--Custom JavaScript -->
+
+  <!-- ============================================================== -->
+  <!-- This page plugins -->
+  <!-- ============================================================== -->
+  <!--morris JavaScript -->
+  <script src="assets/node_modules/raphael/raphael-min.js"></script>
+  <script src="assets/node_modules/morrisjs/morris.min.js"></script>
+  <script src="assets/node_modules/jquery-sparkline/jquery.sparkline.min.js"></script>
+  <!-- Popup message jquery -->
+  <script src="assets/node_modules/toast-master/js/jquery.toast.js"></script>
+  <!-- Chart JS -->
+  
+  <script src="assets/node_modules/datatables/datatables.min.js"></script>
+  <script src="https://cdn.datatables.net/buttons/1.5.1/js/dataTables.buttons.min.js"></script>
+  <script src="https://cdn.datatables.net/buttons/1.5.1/js/buttons.flash.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.32/pdfmake.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.32/vfs_fonts.js"></script>
+  <script src="https://cdn.datatables.net/buttons/1.5.1/js/buttons.html5.min.js"></script>
+  <script src="https://cdn.datatables.net/buttons/1.5.1/js/buttons.print.min.js"></script>
+  <!-- <script src="https://cdn.ckeditor.com/4.9.2/standard-all/ckeditor.js"></script> -->
+  <script src="assets/ckeditor/ckeditor.js"></script>
+  <script src="assets/node_modules/clockpicker/dist/jquery-clockpicker.min.js"></script>
+  <script src="https://maps.google.com/maps/api/js?v=3.exp&key=AIzaSyCmpXVOgyVUtkZWdKuzJXs8gPbUFX8oipE&sensor=false"></script>
+  <script src="assets/node_modules/gmaps/gmaps.min.js"></script>
+
+  <!--Menu sidebar -->
+  <script src="assets/dist/js/sidebarmenu.js"></script>
+  
+</head>
+
+<body class="horizontal-nav skin-default fixed-layout">
+  <app-root></app-root>
+  <script>
+    $('#chat, #msg, #comment, #todo').perfectScrollbar();
+
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+      $('.clockpicker').clockpicker({
+        donetext: 'Done',
+      }).find('input').change(function () {
+        console.log(this.value);
+      });
+    }); 
+  </script>
+
+
+<script type="text/javascript" src="inline.bundle.js"></script><script type="text/javascript" src="polyfills.bundle.js"></script><script type="text/javascript" src="styles.bundle.js"></script><script type="text/javascript" src="scripts.bundle.js"></script><script type="text/javascript" src="vendor.bundle.js"></script><script type="text/javascript" src="main.bundle.js"></script></body>
+
+</html>
